@@ -7,68 +7,140 @@
 
 <br/>
 
-[<img src="./assets/lang-pt.svg" alt="Português" height="28">](./README.md)
-[<img src="./assets/lang-en.svg" alt="English" height="28">](./README.en.md)
-[<img src="./assets/lang-es.svg" alt="Español" height="28">](./README.es.md)
-[<img src="./assets/lang-fr.svg" alt="Français" height="28">](./README.fr.md)
+[<img src="./assets/lang-pt.svg" alt="Português" height="30">](./README.md)
+[<img src="./assets/lang-en.svg" alt="English" height="30">](./README.en.md)
+[<img src="./assets/lang-es.svg" alt="Español" height="30">](./README.es.md)
+[<img src="./assets/lang-fr.svg" alt="Français" height="30">](./README.fr.md)
 
 <br/>
 
-<img src="./assets/inosuke/title.svg" width="100%" alt="Inosuke Full Stack Engineering" />
+<img src="./assets/inosuke/title.svg" width="100%" alt="Inosuke — Beast Breathing Full Stack Engineering" />
 
-**[Abrir demonstração](https://crm.lollahair.com/)** · **[Contato](mailto:gestao.quiroz@gmail.com)**
+### Full Stack Developer · Product Engineer · Web · Android · iOS · SaaS
+
+**Eu transformo operações reais em produtos digitais robustos, seguros e preparados para escala.**
+
+**[🔥 Conhecer o Meu Salão](https://crm.lollahair.com/)** · **[✉️ Entrar em contato](mailto:gestao.quiroz@gmail.com)**
 
 </div>
 
 <img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
+## 🐗 Quem é Inosuke
+
+Sou **Desenvolvedor Full Stack e Product Engineer**. Trabalho de ponta a ponta: frontend, backend, banco de dados, autenticação, autorização, regras de negócio, segurança, integrações, cloud, CI/CD e distribuição multiplataforma.
+
+Meu principal case não nasceu como uma landing page ou projeto de portfólio. Nasceu de uma **operação real**, entrou em produção e continua sendo evoluído com base no uso diário.
+
+> **Meu foco é construir software que aguente a rotina real: dados consistentes, regras conectadas, segurança no backend e uma experiência que funcione tanto para quem administra quanto para quem executa a operação.**
+
 <div align="center">
-  <img src="./assets/inosuke/icon-strip.svg" width="100%" alt="Frontend, Data, Security, Mobile, Cloud and CI/CD" />
+  <img src="./assets/inosuke/icon-strip.svg" width="100%" alt="Tecnologias e áreas de engenharia utilizadas por Inosuke" />
 </div>
-
-## Sobre mim
-
-Sou **Inosuke**, Desenvolvedor Full Stack e Product Engineer. Construo software de ponta a ponta: interface, backend, banco de dados, autenticação, autorização, regras de negócio, segurança, cloud, CI/CD e distribuição multiplataforma.
-
-Meu principal case nasceu de uma operação real e evoluiu para uma plataforma robusta de gestão em produção. O produto já atende **Web Desktop, Web Mobile e Android**, possui fundação para **iOS** e está sendo preparado para evolução comercial como **SaaS**.
-
-> **Meu foco não é apenas fazer a tela funcionar. É fazer operação, dados, segurança e negócio funcionarem como um único sistema.**
 
 <img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-## Projeto principal
+## 🔥 Meu Salão — meu principal produto
 
-### Plataforma de gestão para negócios de beleza
+**Meu Salão** é uma plataforma completa de gestão para salões e negócios de beleza. O sistema já está em funcionamento real e foi desenvolvido para centralizar operação, clientes, financeiro, estoque, equipe e inteligência gerencial em um único ecossistema.
 
-O código-fonte é **proprietário e privado**. Publicamente, mantenho apenas a demonstração do produto e o canal de contato para interessados.
+O código-fonte é **proprietário e privado**. Publicamente, mantenho apenas o ambiente de demonstração e um canal de contato para interessados no produto.
 
 <div align="center">
 
-**[▶ Ver produto em funcionamento](https://crm.lollahair.com/)** · **[✉ Falar comigo sobre o projeto](mailto:gestao.quiroz@gmail.com?subject=Interesse%20no%20produto%20de%20gest%C3%A3o)**
+### [▶ Abrir demonstração do Meu Salão](https://crm.lollahair.com/)
 
 </div>
 
+### O que existe dentro do Meu Salão
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Agenda & operação**
+
+- agenda diária e semanal;
+- organização por profissional;
+- bloqueios e indisponibilidades;
+- sinal via PIX;
+- conflitos de horário;
+- status do atendimento;
+- experiência específica para desktop e mobile.
+
+</td>
+<td width="50%" valign="top">
+
+**CRM & relacionamento**
+
+- cadastro completo de clientes;
+- histórico de atendimentos;
+- retorno e recorrência;
+- aniversários;
+- ticket médio;
+- cancelamentos e no-shows;
+- observações e relacionamento.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**Financeiro & rentabilidade**
+
+- comandas e cobranças;
+- múltiplas formas de pagamento;
+- despesas e custos;
+- fluxo de caixa;
+- resultado operacional;
+- margem e rentabilidade;
+- metas e ponto de equilíbrio.
+
+</td>
+<td width="50%" valign="top">
+
+**Estoque, equipe & gestão**
+
+- produtos e estoque;
+- entradas, saídas e consumo;
+- dose técnica e custo por atendimento;
+- serviços, pacotes e precificação;
+- profissionais e comissões;
+- cargos e permissões;
+- relatórios e indicadores.
+
+</td>
+</tr>
+</table>
+
+### Multiplataforma
+
+| Plataforma | Situação |
+|---|---|
+| 🖥️ **Desktop Web** | ✅ Em operação |
+| 📱 **Mobile Web** | ✅ Em operação |
+| 🤖 **Android** | ✅ Build instalável e testes em dispositivo |
+| 🍎 **iOS** | 🛠️ Fundação arquitetural preparada |
+| ☁️ **SaaS** | 🚧 Preparação para comercialização e planos pagos |
+
+O **Meu Salão já ultrapassou 704 commits** no repositório principal. Esse volume não aparece como código público porque o produto permanece privado — mas a atividade é representada de forma agregada nos gráficos abaixo.
+
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+
+## ⚔️ Beast Stack — arquitetura e tecnologia
+
+<div align="center">
+  <img src="./assets/inosuke/tech-orbit.svg" width="100%" alt="Stack tecnológica do Meu Salão" />
+</div>
+
 <details>
-<summary><b>Explorar módulos do sistema</b></summary>
-<br/>
-
-- **Agenda & operação:** agenda diária/semanal, profissionais, bloqueios, status, conflitos e sinal via PIX.
-- **CRM:** clientes, histórico, recorrência, retorno, aniversários, ticket médio, cancelamentos e relacionamento.
-- **Financeiro:** comandas, cobranças, recebimentos, despesas, custos, fluxo de caixa, margens, metas e ponto de equilíbrio.
-- **Produtos & estoque:** entradas, saídas, consumo interno, dose técnica, custo por atendimento e inventário.
-- **Equipe:** profissionais, comissões, desempenho, cargos e permissões.
-- **Gestão:** precificação, relatórios, indicadores, planejamento e visão operacional integrada.
-
-</details>
-
-<details>
-<summary><b>Explorar arquitetura técnica</b></summary>
+<summary><b>🗡️ Abrir arquitetura técnica do Meu Salão</b></summary>
 <br/>
 
 ```mermaid
 flowchart TB
     subgraph Experience[Experiências]
-        WEB[Desktop Web]
+        DESKTOP[Desktop Web]
         MOBILE[Mobile Web]
         ANDROID[Android]
         IOS[iOS]
@@ -81,7 +153,7 @@ flowchart TB
         CAP[Capacitor]
     end
 
-    subgraph Data[Backend & Data]
+    subgraph Backend[Backend & Data]
         AUTH[Supabase Auth]
         EDGE[Edge Functions]
         RLS[Row Level Security]
@@ -90,12 +162,12 @@ flowchart TB
 
     subgraph Delivery[Cloud & Delivery]
         CF[Cloudflare Workers]
-        GH[GitHub Actions]
+        ACTIONS[GitHub Actions]
         APK[Android Pipeline]
         IOSPIPE[iOS Foundation]
     end
 
-    WEB --> REACT
+    DESKTOP --> REACT
     MOBILE --> REACT
     ANDROID --> CAP
     IOS --> CAP
@@ -108,93 +180,73 @@ flowchart TB
     AUTH --> RLS
     RLS --> DB
     EDGE --> DB
-    GH --> CF
-    GH --> APK
-    GH --> IOSPIPE
+    ACTIONS --> CF
+    ACTIONS --> APK
+    ACTIONS --> IOSPIPE
 ```
 
 </details>
 
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
-
-## Engenharia multiplataforma
-
-| Plataforma | Estado |
-|---|---|
-| **Desktop Web** | ✅ Em produção |
-| **Mobile Web** | ✅ Em produção |
-| **Android** | ✅ Build instalável e testes em dispositivo |
-| **iOS** | 🛠️ Fundação arquitetural preparada |
-| **SaaS** | 🚧 Evolução comercial em andamento |
-
-A experiência mobile não é uma miniatura do desktop: as interfaces compartilham domínio e dados, mas são projetadas para contextos diferentes de uso.
-
-<div align="center">
-  <img src="./assets/inosuke/tech-orbit.svg" width="100%" alt="Inosuke technology orbit" />
-</div>
-
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
-
-## GitHub Analytics — Beast Mode
-
-Os gráficos abaixo são **gerados dentro deste próprio repositório**, usando **D3 + Iconify + GitHub Actions**. Não dependem de GitHub Readme Stats, Streak Stats ou outro servidor externo no momento da visualização.
-
-<div align="center">
-
-<img src="./assets/stats/beast-dashboard.svg" width="100%" alt="Inosuke GitHub activity dashboard" />
-
-<br/>
-
-<img src="./assets/stats/contribution-current.svg" width="100%" alt="Inosuke contribution activity chart" />
-
-<br/>
-
-<img src="./assets/stats/breathing-heatmap.svg" width="100%" alt="Inosuke contribution heatmap" />
-
-</div>
-
 <details>
-<summary><b>Como os gráficos funcionam</b></summary>
+<summary><b>🛡️ Abrir modelo de segurança</b></summary>
 <br/>
 
-O motor visual roda automaticamente pelo GitHub Actions, consulta os dados de atividade permitidos pelo GitHub e gera SVGs animados diretamente em `assets/`.
+```text
+Autenticação
+    ↓
+Validação de sessão
+    ↓
+Perfil / cargo
+    ↓
+Permissões da aplicação
+    ↓
+Row Level Security no banco
+    ↓
+Somente dados autorizados
+```
 
-O repositório principal do produto permanece **privado**. O perfil preserva um snapshot mínimo já verificado de atividade do projeto sem revelar nome, código, branches ou dados internos. Quando o secret opcional `PROFILE_STATS_TOKEN` estiver configurado, o mesmo motor pode atualizar métricas privadas autorizadas com maior precisão sem expor o token ou o código do projeto.
+A proteção não depende apenas do frontend. O controle de acesso também é aplicado na camada de dados.
 
 </details>
 
 <img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-## Stack principal
+## 📜 Beast Activity Ledger — GitHub Analytics
 
-`TypeScript` · `React` · `TanStack` · `Vite` · `Tailwind CSS`  
-`Supabase` · `PostgreSQL` · `Edge Functions` · `Node.js` · `SQL`  
-`Capacitor` · `Android` · `iOS`  
-`Cloudflare Workers` · `GitHub Actions` · `CI/CD` · `Git`
+Os gráficos abaixo são **gerados dentro deste próprio repositório** por GitHub Actions. Eles utilizam os dados que o GitHub permite consultar e mantêm o código privado do Meu Salão oculto.
 
-<details>
-<summary><b>Segurança & arquitetura</b></summary>
+<div align="center">
+
+<img src="./assets/stats/beast-dashboard.svg" width="100%" alt="Inosuke GitHub activity ledger" />
+
 <br/>
 
-**Autenticação → sessão → cargo/permissões → autorização da aplicação → Row Level Security → somente dados autorizados.**
+<img src="./assets/stats/contribution-current.svg" width="100%" alt="Distribuição de commits entre Meu Salão e o perfil" />
 
-- autenticação centralizada;
-- RBAC e permissões granulares;
-- RLS no PostgreSQL;
-- isolamento de acesso no banco;
-- operações administrativas restritas;
-- pipelines de validação e build;
-- regras de negócio compartilhadas entre experiências Web e Mobile.
+<br/>
 
-</details>
+<img src="./assets/stats/breathing-heatmap.svg" width="100%" alt="Calendário público de contribuições do GitHub" />
+
+</div>
+
+### Números atuais
+
+- **Meu Salão:** 704+ commits conhecidos no projeto privado;
+- **Perfil:** contagem automática do repositório público — atualmente acima de 60 commits;
+- **Total rastreado:** soma mínima desses dois ambientes;
+- **Calendário:** mostra apenas o que o GitHub disponibiliza publicamente por data.
+
+> O volume privado é apresentado como total agregado. Eu não distribuo artificialmente esses commits em datas que o GitHub não disponibilizou, porque prefiro uma métrica correta a um gráfico bonito porém falso.
 
 <img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-## Roadmap do produto
+## 🐾 Como eu penso produto
+
+**Operação real → arquitetura sólida → automação → segurança → multiplataforma → SaaS → escala.**
 
 ```mermaid
 flowchart LR
-    A[Operação real] --> B[Arquitetura sólida]
+    A[Operação real] --> B[Produto]
     B --> C[Web]
     C --> D[Android]
     D --> E[iOS]
@@ -204,11 +256,29 @@ flowchart LR
     H --> I[Escala comercial]
 ```
 
+<details>
+<summary><b>🔥 Princípios que eu valorizo</b></summary>
+<br/>
+
+- código modular e compreensível;
+- regras de negócio centralizadas;
+- segurança no backend e no banco;
+- UX pensada para uso diário;
+- automações que reduzem trabalho real;
+- consistência de dados entre módulos;
+- pipelines reproduzíveis;
+- evolução sem quebrar funcionalidades existentes;
+- produto orientado ao problema, não à moda tecnológica.
+
+</details>
+
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+
 <div align="center">
 
-### Software real para operações reais.
+## Quer conhecer o Meu Salão ou conversar sobre um projeto?
 
-**[Demonstração](https://crm.lollahair.com/)** · **[E-mail](mailto:gestao.quiroz@gmail.com)**
+### **[🔥 Abrir demonstração](https://crm.lollahair.com/)** · **[✉️ Entrar em contato](mailto:gestao.quiroz@gmail.com)**
 
 <br/>
 
