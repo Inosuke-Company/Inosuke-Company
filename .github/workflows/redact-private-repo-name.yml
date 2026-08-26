@@ -1,0 +1,56 @@
+name: Redact private repository identifier
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/redact-private-repo-name.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  redact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Remove private repository identifier from current public tree
+        shell: python
+        run: |
+          from pathlib import Path
+
+          script = Path("scripts/render-profile-visuals.mjs")
+          text = script.read_text(encoding="utf-8")
+          text = text.replace(
+              "const CORE_REPO = 'lolla-gest-o-beauty-salon-manager';",
+              "const CORE_REPO = process.env.CORE_REPOSITORY || '';",
+          )
+          text = text.replace(
+              "hasPrivateToken ? repoCommitCount(USER, CORE_REPO, process.env.PROFILE_STATS_TOKEN) : Promise.resolve(null)",
+              "hasPrivateToken && CORE_REPO ? repoCommitCount(USER, CORE_REPO, process.env.PROFILE_STATS_TOKEN) : Promise.resolve(null)",
+          )
+          script.write_text(text, encoding="utf-8")
+
+          workflow = Path(".github/workflows/profile-visual-engine.yml")
+          w = workflow.read_text(encoding="utf-8")
+          marker = "      PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}\n"
+          if "CORE_REPOSITORY:" not in w:
+              w = w.replace(marker, marker + "      CORE_REPOSITORY: ${{ secrets.CORE_REPOSITORY }}\n")
+          workflow.write_text(w, encoding="utf-8")
+
+          Path(".github/workflows/redact-private-repo-name.yml").unlink()
+
+      - name: Commit redaction
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "inosuke-profile-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts/render-profile-visuals.mjs .github/workflows/profile-visual-engine.yml .github/workflows/redact-private-repo-name.yml
+          git commit -m "Keep private repository identifier out of public profile tree"
+          git pull --rebase origin main
+          git push origin main
