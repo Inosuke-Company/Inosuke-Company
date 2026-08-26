@@ -99,7 +99,7 @@ const activeDays = days.filter(d=>d.contributionCount>0).length;
 const prs = gql?.totalPullRequestContributions || 0;
 const reviews = gql?.totalPullRequestReviewContributions || 0;
 const issues = gql?.totalIssueContributions || 0;
-const totalCommits = CORE_COMMIT_FLOOR + profileCommits;
+const totalCommits = CORE_COMMIT_FLOOR + profileCommits + 1;
 const milestone = Math.max(1000, Math.ceil(totalCommits / 500) * 500);
 const progress = Math.min(1, totalCommits / milestone);
 
