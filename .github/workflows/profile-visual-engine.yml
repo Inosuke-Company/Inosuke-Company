@@ -8,6 +8,10 @@ on:
     branches:
       - main
     paths:
+      - "README.md"
+      - "README.en.md"
+      - "README.es.md"
+      - "README.fr.md"
       - "scripts/render-profile-visuals.mjs"
       - "package.json"
       - "package-lock.json"
@@ -46,13 +50,21 @@ jobs:
       - name: Render premium self-hosted visuals
         run: npm run profile:render
 
+      - name: Remove superseded profile artwork
+        shell: bash
+        run: |
+          rm -rf assets/inosuke
+          rm -f assets/stats/beast-dashboard.svg
+          rm -f assets/stats/contribution-current.svg
+          rm -f assets/stats/breathing-heatmap.svg
+
       - name: Commit refreshed visual assets safely
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "inosuke-profile-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add assets/premium assets/stats
+          git add -A assets
           if git diff --cached --quiet; then
             echo "Profile visuals already current."
             exit 0
