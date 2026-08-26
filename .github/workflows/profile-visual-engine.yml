@@ -10,6 +10,7 @@ on:
     paths:
       - "scripts/render-profile-visuals.mjs"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/profile-visual-engine.yml"
 
 permissions:
@@ -38,9 +39,18 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
 
-      - name: Install visual engine libraries
-        run: npm install --no-audit --no-fund --package-lock=false
+      - name: Install pinned visual engine libraries
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
 
       - name: Render D3 + Iconify self-hosted visuals
         run: npm run profile:render
@@ -51,11 +61,11 @@ jobs:
           set -euo pipefail
           git config user.name "inosuke-profile-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add assets/inosuke assets/stats
+          git add assets/inosuke assets/stats package-lock.json
           if git diff --cached --quiet; then
             echo "Profile visuals already current."
             exit 0
           fi
-          git commit -m "Refresh Inosuke profile visuals"
+          git commit -m "Refresh reproducible Inosuke profile visuals"
           git pull --rebase origin main
           git push origin main
