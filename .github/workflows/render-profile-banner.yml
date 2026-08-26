@@ -23,7 +23,9 @@ jobs:
 
     steps:
       - name: Checkout profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Ensure FFmpeg is available
         shell: bash
@@ -47,7 +49,6 @@ jobs:
             -an -loop 0 -c:v "$ENCODER" -lossless 0 -compression_level 3 -q:v 68 \
             banner.webp
           test -s banner.webp
-          ls -lh banner.webp
 
       - name: Render universal animated GIF fallback
         shell: bash
@@ -57,45 +58,18 @@ jobs:
             -filter_complex "fps=8,scale='min(960,iw)':-2:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle" \
             -loop 0 banner-fallback.gif
           test -s banner-fallback.gif
-          ls -lh banner-fallback.gif
 
-      - name: Use responsive autoplay animation in every README language
-        shell: python
-        run: |
-          from pathlib import Path
-          import re
-
-          replacement = '''<picture>
-            <source srcset="./banner.webp" type="image/webp">
-            <img src="./banner-fallback.gif" width="100%" alt="Inosuke — Full Stack Developer" />
-          </picture>'''
-
-          for filename in ["README.md", "README.en.md", "README.es.md", "README.fr.md"]:
-              path = Path(filename)
-              if not path.exists():
-                  continue
-              text = path.read_text(encoding="utf-8")
-              text, count = re.subn(
-                  r'<img src="\./banner(?:\.gif|\.webp|\.mp4|-fallback\.gif)" width="100%" alt="[^"]*"\s*/>',
-                  replacement,
-                  text,
-                  count=1,
-              )
-              if count == 0 and "<picture>" not in text[:700]:
-                  marker = '<div align="center">\n\n'
-                  text = text.replace(marker, marker + replacement + "\n\n", 1)
-              path.write_text(text, encoding="utf-8")
-
-      - name: Commit generated banner assets
+      - name: Commit generated banner assets safely
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "inosuke-profile-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add banner.webp banner-fallback.gif README.md README.en.md README.es.md README.fr.md
+          git add banner.webp banner-fallback.gif
           if git diff --cached --quiet; then
             echo "Banner assets already up to date."
             exit 0
           fi
           git commit -m "Refresh responsive animated banner"
-          git push
+          git pull --rebase origin main
+          git push origin main
