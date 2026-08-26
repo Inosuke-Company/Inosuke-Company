@@ -1,0 +1,16 @@
+{
+  "name": "inosuke-profile-visuals",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "profile:render": "node scripts/render-profile-visuals.mjs"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "latest",
+    "@iconify-json/mdi": "latest",
+    "cheerio": "latest",
+    "d3-array": "latest",
+    "d3-scale": "latest",
+    "d3-shape": "latest"
+  }
+}
