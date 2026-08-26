@@ -2,7 +2,7 @@
 
 <picture>
   <source srcset="./banner.webp" type="image/webp">
-  <img src="./banner-fallback.gif" width="100%" alt="Inosuke — Full Stack Developer" />
+  <img src="./banner-fallback.gif" width="100%" alt="Inosuke — Desenvolvedor Full Stack" />
 </picture>
 
 <br/>
@@ -16,7 +16,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/wordmark-dark.svg">
-  <img src="./assets/premium/wordmark-light.svg" width="100%" alt="Inosuke — Full Stack Developer e Product Engineer" />
+  <img src="./assets/premium/wordmark-light.svg" width="100%" alt="Inosuke — Desenvolvedor Full Stack e Engenheiro de Produto" />
 </picture>
 
 <br/>
@@ -32,7 +32,7 @@
 
 ## Perfil
 
-Sou **Inosuke**, Desenvolvedor Full Stack e Product Engineer. Trabalho na construção de produtos digitais completos: da experiência de interface à arquitetura de dados, autenticação, autorização, regras de negócio, segurança, infraestrutura em nuvem, automação de entrega e distribuição multiplataforma.
+Sou **Inosuke**, **Desenvolvedor Full Stack e Engenheiro de Produto**. Trabalho na construção de produtos digitais completos: da experiência de interface à arquitetura de dados, autenticação, autorização, regras de negócio, segurança, infraestrutura em nuvem, automação de entrega e distribuição multiplataforma.
 
 Meu principal trabalho de engenharia nasceu de uma operação real e se transformou em um sistema robusto usado em produção. Isso moldou a forma como desenvolvo: software precisa continuar funcionando quando sai da demonstração e entra na rotina de uma empresa.
 
@@ -73,9 +73,9 @@ O código-fonte é **proprietário e privado**. O acesso público fica restrito 
 - Serviços, pacotes, precificação, margem, metas e ponto de equilíbrio.
 - Profissionais, comissões, desempenho, cargos, usuários e permissões.
 - Relatórios, indicadores e visão gerencial integrada.
-- Experiências específicas para Desktop Web e Mobile Web.
+- Experiências específicas para Web Desktop e Web Mobile.
 - Aplicativo Android instalável e fundação preparada para iOS.
-- Arquitetura em evolução para multi-tenant, planos pagos e distribuição SaaS.
+- Arquitetura em evolução para múltiplos clientes, planos pagos e distribuição SaaS.
 
 </details>
 
@@ -83,12 +83,12 @@ O código-fonte é **proprietário e privado**. O acesso público fica restrito 
 <summary><b>Explorar arquitetura e segurança</b></summary>
 <br/>
 
-**Application:** React · TypeScript · TanStack · Vite · Tailwind CSS  
-**Data:** PostgreSQL · Supabase · Edge Functions · SQL  
-**Security:** Auth · RBAC · Row Level Security · isolamento de acesso  
-**Mobile:** Capacitor · Android · iOS foundation  
-**Cloud:** Cloudflare Workers · Supabase  
-**Delivery:** GitHub Actions · CI/CD · builds e artefatos reproduzíveis
+**Aplicação:** React 19 · TypeScript · TanStack Start · Vite · Tailwind CSS  
+**Dados:** PostgreSQL · Supabase · Funções de Borda · SQL  
+**Segurança:** Autenticação · RBAC · Row Level Security · isolamento de acesso  
+**Mobile:** Capacitor · Android · iOS · Java 21 · Gradle  
+**Nuvem:** Cloudflare Workers · Supabase  
+**Entrega:** GitHub Actions · CI/CD · builds e artefatos reproduzíveis
 
 A autorização não depende apenas da interface. Permissões são aplicadas na aplicação e reforçadas na camada de dados com políticas de segurança.
 
@@ -103,10 +103,10 @@ A autorização não depende apenas da interface. Permissões são aplicadas na 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/stack-dark.svg">
-  <img src="./assets/premium/stack-light.svg" width="100%" alt="Stack de engenharia" />
+  <img src="./assets/premium/stack-light.svg" width="100%" alt="Stack tecnológica" />
 </picture>
 
-Minha stack é escolhida a partir do problema e da sustentabilidade da arquitetura, não apenas pela tendência tecnológica. Hoje meu trabalho concentra-se principalmente em **TypeScript, React, PostgreSQL, Supabase, Cloudflare, Capacitor, Android, iOS e GitHub Actions**.
+Minha stack atual reúne **TypeScript, React 19, TanStack, Vite, Tailwind CSS, Node.js, Supabase, PostgreSQL, Capacitor, Android, iOS, Java 21, Gradle, Cloudflare, Workers, GitHub Actions, Git, Zod, React Query e npm**. A escolha de tecnologia parte do problema e da sustentabilidade da arquitetura, não apenas de tendência.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg">
@@ -120,9 +120,9 @@ Minha stack é escolhida a partir do problema e da sustentabilidade da arquitetu
   <img src="./assets/stats/overall-activity-light.svg" width="100%" alt="Atividade geral de engenharia no GitHub" />
 </picture>
 
-O indicador principal acima apresenta **os commits rastreados de forma agregada**, sem separar ou identificar os repositórios que originaram a atividade. O produto principal permanece privado.
+O indicador principal apresenta **os commits de forma agregada**, sem separar ou revelar os repositórios que originaram a atividade.
 
-O total é atualizado automaticamente pelo próprio GitHub Actions. A parte pública é recalculada a cada execução e o histórico privado conhecido é preservado no total sem expor código, branches ou nomes internos.
+O pipeline foi preparado para descobrir os meus repositórios e recalcular o total automaticamente. Repositórios privados permanecem anônimos no perfil público.
 
 <br/>
 
@@ -131,7 +131,7 @@ O total é atualizado automaticamente pelo próprio GitHub Actions. A parte púb
   <img src="./assets/stats/heatmap-premium-light.svg" width="100%" alt="Calendário público de contribuições" />
 </picture>
 
-<sub>O calendário mostra somente contribuições que o GitHub disponibiliza publicamente por data. Ele é diferente do total agregado de commits acima, que inclui atividade conhecida em projetos privados.</sub>
+<sub>O calendário representa a atividade que o GitHub disponibiliza publicamente por data. O indicador de commits acima é uma métrica agregada independente.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg">
@@ -142,10 +142,10 @@ O total é atualizado automaticamente pelo próprio GitHub Actions. A parte púb
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/roadmap-dark.svg">
-  <img src="./assets/premium/roadmap-light.svg" width="100%" alt="Roadmap do Meu Salão" />
+  <img src="./assets/premium/roadmap-light.svg" width="100%" alt="Evolução do Meu Salão" />
 </picture>
 
-O **Meu Salão** já nasceu de uso real. A próxima etapa é transformar essa base operacional em uma plataforma comercial: ampliar a experiência mobile, concluir a distribuição iOS, evoluir a arquitetura multi-tenant e estruturar planos pagos.
+O **Meu Salão** já nasceu de uso real. A próxima etapa é transformar essa base operacional em uma plataforma comercial: ampliar a experiência mobile, concluir a distribuição iOS, evoluir a arquitetura para múltiplos clientes e estruturar planos pagos.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg">
@@ -156,7 +156,7 @@ O **Meu Salão** já nasceu de uso real. A próxima etapa é transformar essa ba
 
 ### Produto real. Engenharia de ponta a ponta.
 
-**Full Stack Development · Product Engineering · Web · Android · iOS · SaaS**
+**Desenvolvimento Full Stack · Engenharia de Produto · Web · Android · iOS · SaaS**
 
 <br/>
 
