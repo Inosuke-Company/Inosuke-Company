@@ -1,5 +1,5 @@
-# Premium self-hosted profile renderer
-name: Render Inosuke premium profile visuals
+# Renderizador premium auto-hospedado do perfil
+name: Atualizar visuais premium do perfil Inosuke
 
 on:
   workflow_dispatch:
@@ -28,48 +28,41 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     env:
       GITHUB_USER: Inosuke-Company
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      CORE_COMMIT_FLOOR: "704"
+      PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+      PRIVATE_COMMIT_BASELINE: "704"
 
     steps:
-      - name: Checkout profile repository
+      - name: Baixar repositório do perfil
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Preparar Node.js
         uses: actions/setup-node@v5
         with:
           node-version: 22
 
-      - name: Install pinned visual engine libraries
-        run: npm ci --no-audit --no-fund
+      - name: Instalar bibliotecas visuais
+        run: npm install --no-audit --no-fund
 
-      - name: Render premium self-hosted visuals
+      - name: Gerar visuais e métricas em português
         run: npm run profile:render
 
-      - name: Remove superseded profile artwork
-        shell: bash
-        run: |
-          rm -rf assets/inosuke
-          rm -f assets/stats/beast-dashboard.svg
-          rm -f assets/stats/contribution-current.svg
-          rm -f assets/stats/breathing-heatmap.svg
-
-      - name: Commit refreshed visual assets safely
+      - name: Publicar ativos atualizados com segurança
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "inosuke-profile-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A assets
+          git add -A assets package-lock.json
           if git diff --cached --quiet; then
-            echo "Profile visuals already current."
+            echo "Os visuais do perfil já estão atualizados."
             exit 0
           fi
-          git commit -m "Refresh premium Inosuke profile visuals"
+          git commit -m "Atualizar métricas e visuais do perfil"
           git pull --rebase origin main
           git push origin main
