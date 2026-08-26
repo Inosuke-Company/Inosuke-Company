@@ -4,9 +4,12 @@
 
 <br/>
 
-### 🌍 Idioma / Language
+### 🌐 Este perfil também está disponível em outros idiomas
 
-[🇧🇷 **Português**](./README.md) · [🇺🇸 **English**](./README.en.md) · [🇪🇸 **Español**](./README.es.md) · [🇫🇷 **Français**](./README.fr.md)
+[<img src="./assets/lang-pt.svg" alt="Português" height="28">](./README.md)
+[<img src="./assets/lang-en.svg" alt="English" height="28">](./README.en.md)
+[<img src="./assets/lang-es.svg" alt="Español" height="28">](./README.es.md)
+[<img src="./assets/lang-fr.svg" alt="Français" height="28">](./README.fr.md)
 
 <br/>
 
@@ -16,9 +19,7 @@
 
 **Transformando operações reais em software robusto, seguro e escalável.**
 
-[![Demo](https://img.shields.io/badge/DEMONSTRAÇÃO-crm.lollahair.com-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://crm.lollahair.com/)
-[![Contato](https://img.shields.io/badge/CONTATO-E--MAIL-181717?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gestao.quiroz@gmail.com)
-[![Perfil](https://img.shields.io/badge/GITHUB-QUIROZ-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gestao-quiroz)
+**[🌐 Ver demonstração](https://crm.lollahair.com/)** · **[✉️ Entrar em contato](mailto:gestao.quiroz@gmail.com)**
 
 </div>
 
@@ -115,12 +116,11 @@ O produto conecta diferentes áreas operacionais e gerenciais em um mesmo ecossi
 
 ### 🔒 Código privado. Produto demonstrável.
 
-O código-fonte desse sistema é **proprietário e permanece privado**. A apresentação pública é feita somente pelo ambiente de demonstração.
+O código-fonte desse sistema é **proprietário e permanece privado**. Publicamente, disponibilizo apenas o ambiente de demonstração e o contato para interessados.
 
 <div align="center">
 
-[![Ver sistema](https://img.shields.io/badge/ABRIR_SISTEMA_DE_DEMONSTRAÇÃO-22C55E?style=for-the-badge&logo=googlechrome&logoColor=white)](https://crm.lollahair.com/)
-[![Falar comigo](https://img.shields.io/badge/INTERESSE_NO_PROJETO-FALE_COMIGO-F59E0B?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gestao.quiroz@gmail.com?subject=Interesse%20no%20projeto%20de%20gest%C3%A3o)
+**[▶ Abrir demonstração](https://crm.lollahair.com/)** · **[✉ Falar comigo sobre o produto](mailto:gestao.quiroz@gmail.com?subject=Interesse%20no%20produto%20de%20gest%C3%A3o)**
 
 </div>
 
@@ -151,7 +151,7 @@ flowchart LR
 
 ---
 
-## 📱 Multiplataforma
+## 📱 Engenharia multiplataforma
 
 | Plataforma | Estado |
 |---|---|
@@ -217,30 +217,19 @@ flowchart TB
 
 ---
 
-<div align="center">
+## 🧰 Stack principal
 
-## 🧰 Stack
+**Frontend**  
+`TypeScript` · `React 19` · `TanStack Router / Start` · `Vite` · `Tailwind CSS`
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+**Backend & Data**  
+`Supabase` · `PostgreSQL` · `Edge Functions` · `Node.js` · `SQL`
 
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+**Mobile**  
+`Capacitor` · `Android` · `iOS Foundation`
 
-![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
+**Cloud & DevOps**  
+`Cloudflare Workers` · `GitHub Actions` · `CI/CD` · `Git`
 
 ---
 
@@ -282,6 +271,48 @@ flowchart LR
 
 ---
 
+## 📊 GitHub Analytics — hospedado no próprio repositório
+
+Os gráficos abaixo **não dependem de GitHub Readme Stats, Streak Stats ou outros serviços externos**. Eles são SVGs gerados automaticamente por um workflow deste próprio repositório e atualizados diariamente.
+
+<div align="center">
+
+<img src="./assets/stats/overview.svg" width="100%" alt="Quiroz GitHub metrics overview" />
+
+<br/>
+
+<img src="./assets/stats/activity.svg" width="100%" alt="Quiroz monthly GitHub activity" />
+
+<br/>
+
+<img src="./assets/stats/heatmap.svg" width="100%" alt="Quiroz contribution heatmap" />
+
+</div>
+
+### Como as contribuições privadas são tratadas
+
+O gerador utiliza a API oficial do GitHub. Quando sua configuração **Include private contributions on my profile** estiver ativada, a atividade privada que o GitHub permite expor de forma agregada entra nas métricas sem revelar o nome ou o código do repositório privado.
+
+Para métricas privadas detalhadas autorizadas — por exemplo, contabilização exata de commits em repositórios privados — o workflow já suporta um token opcional chamado `PROFILE_STATS_TOKEN`. Esse token fica armazenado apenas em **GitHub Actions Secrets** e nunca aparece no README ou no código.
+
+---
+
+<div align="center">
+
+## 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake.svg">
+  <img alt="Animação das contribuições no GitHub" src="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake.svg">
+</picture>
+
+<sub>Gerada automaticamente pelo GitHub Actions deste repositório.</sub>
+
+</div>
+
+---
+
 ## 🎯 Como penso produto
 
 ```mermaid
@@ -309,22 +340,6 @@ mindmap
 ```
 
 > **Software bom não é apenas o que funciona na apresentação. É o que continua funcionando quando entra na rotina de uma operação real.**
-
----
-
-<div align="center">
-
-## 🐍 Atividade no GitHub
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gestao-quiroz/SobreMim/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gestao-quiroz/SobreMim/output/github-contribution-grid-snake.svg">
-  <img alt="Animação das contribuições no GitHub" src="https://raw.githubusercontent.com/gestao-quiroz/SobreMim/output/github-contribution-grid-snake.svg">
-</picture>
-
-<sub>Esta animação é gerada automaticamente por GitHub Actions e fica hospedada no próprio repositório.</sub>
-
-</div>
 
 ---
 
@@ -366,8 +381,7 @@ flowchart LR
 
 ### Quer conhecer o produto ou conversar sobre um projeto?
 
-[![Demonstração](https://img.shields.io/badge/VER_DEMONSTRAÇÃO-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://crm.lollahair.com/)
-[![E-mail](https://img.shields.io/badge/ENTRAR_EM_CONTATO-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gestao.quiroz@gmail.com)
+**[🌐 Ver demonstração](https://crm.lollahair.com/)** · **[✉️ Entrar em contato](mailto:gestao.quiroz@gmail.com)**
 
 <br/><br/>
 
