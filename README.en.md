@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="./banner.gif" width="100%" alt="Quiroz — Full Stack Developer" />
+<picture>
+  <source srcset="./banner.webp" type="image/webp">
+  <img src="./banner-fallback.gif" width="100%" alt="Quiroz — Full Stack Developer" />
+</picture>
 
 ### 🌐 This profile is also available in other languages
 
