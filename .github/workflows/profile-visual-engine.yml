@@ -4,7 +4,8 @@ name: Atualizar visuais premium do perfil Inosuke
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 3 * * *"
+    # Recalcula todos os repositórios uma vez por hora.
+    - cron: "17 * * * *"
   push:
     branches:
       - main
