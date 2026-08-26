@@ -2,122 +2,150 @@
 
 <picture>
   <source srcset="./banner.webp" type="image/webp">
-  <img src="./banner-fallback.gif" width="100%" alt="Quiroz — Full Stack Developer" />
+  <img src="./banner-fallback.gif" width="100%" alt="Inosuke — Full Stack Developer" />
 </picture>
 
-### 🌐 Este perfil también está disponible en otros idiomas
+<br/>
 
 [<img src="./assets/lang-pt.svg" alt="Português" height="28">](./README.md)
 [<img src="./assets/lang-en.svg" alt="English" height="28">](./README.en.md)
 [<img src="./assets/lang-es.svg" alt="Español" height="28">](./README.es.md)
 [<img src="./assets/lang-fr.svg" alt="Français" height="28">](./README.fr.md)
 
-# Quiroz
+<br/>
 
-### Full Stack Developer · Product Engineer · Web · Android · iOS · SaaS
+<img src="./assets/inosuke/title.svg" width="100%" alt="Inosuke Full Stack Engineering" />
 
-**Transformando operaciones reales en software robusto, seguro y escalable.**
-
-**[🌐 Ver demostración](https://crm.lollahair.com/)** · **[✉️ Contactarme](mailto:gestao.quiroz@gmail.com)**
+**[Ver demostración](https://crm.lollahair.com/)** · **[Contacto](mailto:gestao.quiroz@gmail.com)**
 
 </div>
 
----
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-<div align="center"><img src="./assets/terminal.svg" width="100%" alt="Terminal animado de Quiroz" /></div>
+<div align="center"><img src="./assets/inosuke/icon-strip.svg" width="100%" alt="Capacidades de ingeniería" /></div>
 
----
+## Sobre mí
 
-## ⚡ Sobre mí
+Soy **Inosuke**, Desarrollador Full Stack y Product Engineer. Construyo software de extremo a extremo: frontend, backend, bases de datos, autenticación, autorización, reglas de negocio, seguridad, cloud, CI/CD y distribución multiplataforma.
 
-Soy **Desarrollador Full Stack** enfocado en convertir procesos operativos complejos en productos digitales completos y mantenibles.
+Mi principal caso de ingeniería nació de una operación real y evolucionó hasta convertirse en una plataforma robusta de gestión en producción. El producto ya funciona en **Desktop Web, Mobile Web y Android**, tiene base para **iOS** y está siendo preparado para evolucionar comercialmente como **SaaS**.
 
-Trabajo de extremo a extremo: **frontend, backend, bases de datos, autenticación, autorización, seguridad, reglas de negocio, integraciones, cloud, CI/CD y distribución multiplataforma**.
+> **No me concentro solamente en hacer que una pantalla funcione. Construyo sistemas donde operación, datos, seguridad y negocio funcionan como un solo producto.**
 
-Mi principal caso de ingeniería nació de una operación real y evolucionó hasta convertirse en una plataforma de gestión robusta en producción, diseñada para **Desktop Web, Mobile Web, Android e iOS**, con evolución prevista hacia un modelo **SaaS comercial**.
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-> **No construyo pantallas aisladas. Construyo sistemas donde operación, datos, seguridad y negocio funcionan como un solo producto.**
+## Producto principal
 
----
+El código fuente es **propietario y privado**. Públicamente mantengo únicamente el entorno de demostración y el canal de contacto.
 
-<div align="center"><img src="./assets/platform.svg" width="100%" alt="Arquitectura multiplataforma de Quiroz" /></div>
+**[▶ Abrir demostración](https://crm.lollahair.com/)** · **[✉ Hablar conmigo](mailto:gestao.quiroz@gmail.com?subject=Inter%C3%A9s%20en%20el%20producto)**
 
----
+<details>
+<summary><b>Explorar módulos del sistema</b></summary>
+<br/>
 
-## 🚀 Principal caso de ingeniería
+Agenda, CRM, pagos, gastos, inventario, consumo, dosificación técnica, precios, comisiones, resultados financieros, informes, planificación, usuarios, cargos y permisos — todo integrado en un mismo ecosistema operativo.
 
-La plataforma integra agenda, CRM, finanzas, inventario, consumo, precios, comisiones, indicadores y control de acceso en un mismo ecosistema.
+</details>
+
+<details>
+<summary><b>Explorar arquitectura técnica</b></summary>
+<br/>
+
+```mermaid
+flowchart TB
+    subgraph Experience[Experiencias]
+        WEB[Desktop Web]
+        MOBILE[Mobile Web]
+        ANDROID[Android]
+        IOS[iOS]
+    end
+    subgraph Application[Application Layer]
+        REACT[React + TypeScript]
+        ROUTER[TanStack]
+        DOMAIN[Shared Domain & Business Rules]
+        CAP[Capacitor]
+    end
+    subgraph Data[Backend & Data]
+        AUTH[Supabase Auth]
+        EDGE[Edge Functions]
+        RLS[Row Level Security]
+        DB[(PostgreSQL)]
+    end
+    subgraph Delivery[Cloud & Delivery]
+        CF[Cloudflare Workers]
+        GH[GitHub Actions]
+        APK[Android Pipeline]
+        IOSPIPE[iOS Foundation]
+    end
+    WEB --> REACT
+    MOBILE --> REACT
+    ANDROID --> CAP
+    IOS --> CAP
+    CAP --> REACT
+    REACT --> ROUTER
+    ROUTER --> DOMAIN
+    DOMAIN --> AUTH
+    DOMAIN --> EDGE
+    DOMAIN --> DB
+    AUTH --> RLS
+    RLS --> DB
+    EDGE --> DB
+    GH --> CF
+    GH --> APK
+    GH --> IOSPIPE
+```
+
+</details>
+
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+
+## Ingeniería multiplataforma
 
 | Plataforma | Estado |
 |---|---|
-| 🖥️ Desktop Web | ✅ En producción |
-| 📱 Mobile Web | ✅ En producción |
-| 🤖 Android | ✅ Build instalable y pruebas en dispositivo |
-| 🍎 iOS | 🛠️ Base arquitectónica preparada |
-| ☁️ SaaS | 🚧 Evolución comercial en curso |
+| **Desktop Web** | ✅ En producción |
+| **Mobile Web** | ✅ En producción |
+| **Android** | ✅ Build instalable y pruebas en dispositivo |
+| **iOS** | 🛠️ Base arquitectónica preparada |
+| **SaaS** | 🚧 Evolución comercial en curso |
 
-### 🔒 Código privado. Producto demostrable.
+<div align="center"><img src="./assets/inosuke/tech-orbit.svg" width="100%" alt="Órbita tecnológica de Inosuke" /></div>
 
-El código fuente es **propietario y privado**. El acceso público está limitado al entorno de demostración y al contacto directo.
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
 
-**[▶ Abrir demo](https://crm.lollahair.com/)** · **[✉ Hablar conmigo](mailto:gestao.quiroz@gmail.com?subject=Inter%C3%A9s%20en%20el%20producto)**
+## GitHub Analytics — Beast Mode
 
----
+Los gráficos se **generan dentro de este repositorio** usando **D3 + Iconify + GitHub Actions**. No dependen de un servicio externo de estadísticas cuando se renderiza el README.
 
-## 🧰 Stack principal
+<div align="center">
+<img src="./assets/stats/beast-dashboard.svg" width="100%" alt="Dashboard de actividad de Inosuke" />
+<br/>
+<img src="./assets/stats/contribution-current.svg" width="100%" alt="Actividad de contribuciones de Inosuke" />
+<br/>
+<img src="./assets/stats/breathing-heatmap.svg" width="100%" alt="Mapa de contribuciones de Inosuke" />
+</div>
 
-`TypeScript` · `React 19` · `TanStack` · `Vite` · `Tailwind CSS`  
+<details>
+<summary><b>Cómo funciona el motor de métricas</b></summary>
+<br/>
+
+Un workflow de GitHub Actions consulta la actividad que GitHub permite exponer y genera los SVG animados localmente. El repositorio principal del producto permanece privado. El perfil conserva un mínimo verificado de actividad sin revelar nombres de repositorios, código fuente ni metadatos privados. El secret opcional `PROFILE_STATS_TOKEN` puede habilitar métricas privadas autorizadas con mayor precisión.
+
+</details>
+
+<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+
+## Stack principal
+
+`TypeScript` · `React` · `TanStack` · `Vite` · `Tailwind CSS`  
 `Supabase` · `PostgreSQL` · `Edge Functions` · `Node.js` · `SQL`  
-`Capacitor` · `Android` · `iOS Foundation`  
+`Capacitor` · `Android` · `iOS`  
 `Cloudflare Workers` · `GitHub Actions` · `CI/CD` · `Git`
 
----
-
-## 🔐 Seguridad por diseño
-
-Autenticación → validación de sesión → roles y permisos → autorización → **Row Level Security** → solo datos autorizados.
-
----
-
-## 📊 GitHub Analytics alojado en el propio repositorio
-
-Los gráficos se generan automáticamente con **GitHub Actions** y se guardan como SVG locales dentro de este repositorio. No dependen de servicios externos de estadísticas.
-
 <div align="center">
 
-<img src="./assets/stats/overview.svg" width="100%" alt="Resumen de métricas de GitHub de Quiroz" />
-
-<br/>
-
-<img src="./assets/stats/activity.svg" width="100%" alt="Actividad mensual de Quiroz" />
-
-<br/>
-
-<img src="./assets/stats/heatmap.svg" width="100%" alt="Mapa de contribuciones de Quiroz" />
-
-</div>
-
-La actividad privada se muestra según la configuración de privacidad de GitHub sin revelar nombres de repositorios ni código privado. El workflow también admite el secret opcional `PROFILE_STATS_TOKEN` para métricas privadas detalladas autorizadas.
-
----
-
-<div align="center">
-
-## 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake.svg">
-  <img alt="Animación de contribuciones" src="https://raw.githubusercontent.com/gestao-quiroz/gestao-quiroz/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-**Quiroz · Full Stack Developer · Product Engineer**
+**Inosuke · Full Stack Developer · Product Engineer**
 
 `Web` · `Android` · `iOS` · `SaaS` · `Cloud` · `Security` · `CI/CD`
 
