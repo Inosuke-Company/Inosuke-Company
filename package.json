@@ -8,6 +8,7 @@
   "dependencies": {
     "@iconify-json/lucide": "1.2.126",
     "@iconify-json/mdi": "1.2.3",
+    "@iconify-json/simple-icons": "1.2.93",
     "cheerio": "1.2.0",
     "d3-array": "3.2.4",
     "d3-scale": "4.0.2",
