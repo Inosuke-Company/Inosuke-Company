@@ -1,4 +1,4 @@
-name: Render Inosuke profile visuals
+name: Render Inosuke premium profile visuals
 
 on:
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
     env:
       GITHUB_USER: Inosuke-Company
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+      CORE_COMMIT_FLOOR: "704"
 
     steps:
       - name: Checkout profile repository
@@ -41,16 +41,9 @@ jobs:
           node-version: 22
 
       - name: Install pinned visual engine libraries
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [ -f package-lock.json ]; then
-            npm ci --no-audit --no-fund
-          else
-            npm install --no-audit --no-fund
-          fi
+        run: npm ci --no-audit --no-fund
 
-      - name: Render D3 + Iconify self-hosted visuals
+      - name: Render premium self-hosted visuals
         run: npm run profile:render
 
       - name: Commit refreshed visual assets safely
@@ -59,11 +52,11 @@ jobs:
           set -euo pipefail
           git config user.name "inosuke-profile-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add assets/inosuke assets/stats package-lock.json
+          git add assets/premium assets/stats
           if git diff --cached --quiet; then
             echo "Profile visuals already current."
             exit 0
           fi
-          git commit -m "Refresh reproducible Inosuke profile visuals"
+          git commit -m "Refresh premium Inosuke profile visuals"
           git pull --rebase origin main
           git push origin main
