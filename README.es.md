@@ -1,142 +1,102 @@
 <div align="center">
 
-<picture>
-  <source srcset="./banner.webp" type="image/webp">
-  <img src="./banner-fallback.gif" width="100%" alt="Inosuke — Full Stack Developer" />
-</picture>
+<picture><source srcset="./banner.webp" type="image/webp"><img src="./banner-fallback.gif" width="100%" alt="Inosuke — Full Stack Developer" /></picture>
 
 <br/>
 
-[<img src="./assets/lang-pt.svg" alt="Português" height="30">](./README.md)
-[<img src="./assets/lang-en.svg" alt="English" height="30">](./README.en.md)
-[<img src="./assets/lang-es.svg" alt="Español" height="30">](./README.es.md)
-[<img src="./assets/lang-fr.svg" alt="Français" height="30">](./README.fr.md)
+[<img src="./assets/lang-pt.svg" alt="Português" height="28">](./README.md)
+[<img src="./assets/lang-en.svg" alt="English" height="28">](./README.en.md)
+[<img src="./assets/lang-es.svg" alt="Español" height="28">](./README.es.md)
+[<img src="./assets/lang-fr.svg" alt="Français" height="28">](./README.fr.md)
+
+<br/><br/>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/wordmark-dark.svg"><img src="./assets/premium/wordmark-light.svg" width="100%" alt="Inosuke — Full Stack Developer y Product Engineer" /></picture>
 
 <br/>
 
-<img src="./assets/inosuke/title.svg" width="100%" alt="Inosuke — Beast Breathing Full Stack Engineering" />
-
-### Full Stack Developer · Product Engineer · Web · Android · iOS · SaaS
-
-**Transformo operaciones reales en productos digitales robustos, seguros y escalables.**
-
-**[🔥 Conocer Meu Salão](https://crm.lollahair.com/)** · **[✉️ Contactarme](mailto:gestao.quiroz@gmail.com)**
+**[ABRIR DEMOSTRACIÓN](https://crm.lollahair.com/)** &nbsp;&nbsp;·&nbsp;&nbsp; **[CONTACTO](mailto:gestao.quiroz@gmail.com)**
 
 </div>
 
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
 
-## 🐗 Sobre Inosuke
+## Perfil
 
-Soy **Desarrollador Full Stack y Product Engineer**. Trabajo de extremo a extremo: frontend, backend, bases de datos, autenticación, autorización, reglas de negocio, seguridad, cloud, CI/CD y distribución multiplataforma.
+Soy **Inosuke**, Desarrollador Full Stack y Product Engineer. Construyo productos digitales de extremo a extremo: interfaz, backend, arquitectura de datos, autenticación, autorización, reglas de negocio, seguridad, cloud, CI/CD y distribución multiplataforma.
 
-Mi principal caso de ingeniería nació de una **operación real**, entró en producción y continúa evolucionando según el uso diario.
+Mi principal trabajo de ingeniería nació de una operación real y evolucionó hasta convertirse en un sistema robusto utilizado en producción. El software debe seguir funcionando cuando termina la demo y comienza la operación diaria.
 
-<div align="center"><img src="./assets/inosuke/icon-strip.svg" width="100%" alt="Stack de ingeniería de Inosuke" /></div>
+> **Construyo productos donde interfaz, datos, seguridad, automatización y negocio funcionan como una sola arquitectura.**
 
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
 
-## 🔥 Meu Salão — producto principal
+## Meu Salão
 
-**Meu Salão** es una plataforma completa de gestión para salones y negocios de belleza. Centraliza agenda, CRM, cobros, gastos, inventario, consumo, precios, comisiones, resultados financieros, informes, usuarios y permisos.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/product-dark.svg"><img src="./assets/premium/product-light.svg" width="100%" alt="Meu Salão — plataforma de gestión para negocios de belleza" /></picture>
 
-El código fuente es **propietario y privado**. El acceso público se limita al entorno de demostración y al contacto directo.
+**Meu Salão** es mi principal producto de ingeniería: una plataforma integrada de gestión nacida de las necesidades reales de un salón en funcionamiento y preparada para evolucionar como SaaS comercial.
 
-<div align="center">
+Integra **agenda, CRM, finanzas, comandas, pagos, inventario, consumo, precios, profesionales, comisiones, informes, indicadores, usuarios y permisos**.
 
-### [▶ Abrir demo de Meu Salão](https://crm.lollahair.com/)
+El código fuente es **propietario y privado**. El acceso público se limita a la demostración y al contacto directo.
 
-</div>
+<div align="center">**[VER MEU SALÃO EN FUNCIONAMIENTO](https://crm.lollahair.com/)** &nbsp;&nbsp;·&nbsp;&nbsp; **[HABLAR SOBRE EL PRODUCTO](mailto:gestao.quiroz@gmail.com?subject=Inter%C3%A9s%20en%20Meu%20Sal%C3%A3o)**</div>
 
-| Plataforma | Estado |
-|---|---|
-| 🖥️ **Desktop Web** | ✅ En producción |
-| 📱 **Mobile Web** | ✅ En producción |
-| 🤖 **Android** | ✅ Build instalable y pruebas en dispositivo |
-| 🍎 **iOS** | 🛠️ Base arquitectónica preparada |
-| ☁️ **SaaS** | 🚧 Preparación comercial y planes de pago |
+<details><summary><b>Explorar funciones del producto</b></summary><br/>
 
-Meu Salão ya supera **704 commits** en su repositorio principal privado.
-
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
-
-## ⚔️ Beast Stack
-
-<div align="center"><img src="./assets/inosuke/tech-orbit.svg" width="100%" alt="Stack tecnológica de Meu Salão" /></div>
-
-<details>
-<summary><b>🗡️ Abrir arquitectura técnica</b></summary>
-<br/>
-
-```mermaid
-flowchart TB
-    subgraph Experience
-        WEB[Desktop Web]
-        MOBILE[Mobile Web]
-        ANDROID[Android]
-        IOS[iOS]
-    end
-    subgraph Application
-        REACT[React + TypeScript]
-        TANSTACK[TanStack]
-        DOMAIN[Shared Domain & Business Rules]
-        CAP[Capacitor]
-    end
-    subgraph Backend
-        AUTH[Supabase Auth]
-        EDGE[Edge Functions]
-        RLS[Row Level Security]
-        DB[(PostgreSQL)]
-    end
-    subgraph Delivery
-        CF[Cloudflare Workers]
-        GH[GitHub Actions]
-    end
-    WEB --> REACT
-    MOBILE --> REACT
-    ANDROID --> CAP
-    IOS --> CAP
-    CAP --> REACT
-    REACT --> TANSTACK --> DOMAIN
-    DOMAIN --> AUTH
-    DOMAIN --> EDGE
-    DOMAIN --> DB
-    AUTH --> RLS --> DB
-    GH --> CF
-```
+- Agenda, profesionales, bloqueos, conflictos y estados de atención.
+- Clientes, historial, recurrencia, retorno y relación.
+- Comandas, cobros, pagos, gastos, costes y resultados.
+- Productos, inventario, movimientos, consumo y coste por servicio.
+- Servicios, paquetes, precios, márgenes, objetivos y punto de equilibrio.
+- Profesionales, comisiones, rendimiento, roles, usuarios y permisos.
+- Informes, indicadores y visión gerencial integrada.
+- Desktop Web, Mobile Web, Android e infraestructura preparada para iOS.
+- Evolución hacia multi-tenant, planes de pago y SaaS.
 
 </details>
 
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
 
-## 📜 Beast Activity Ledger — GitHub Analytics
+## Tecnología
 
-Los gráficos se **generan dentro de este repositorio mediante GitHub Actions**. El código privado permanece oculto y la actividad verificada se presenta de forma agregada.
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/stack-dark.svg"><img src="./assets/premium/stack-light.svg" width="100%" alt="Stack de ingeniería" /></picture>
+
+Trabajo principalmente con **TypeScript, React, PostgreSQL, Supabase, Cloudflare, Capacitor, Android, iOS y GitHub Actions**, priorizando arquitectura sostenible y seguridad.
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
+
+## Ingeniería en números
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stats/overall-activity-dark.svg"><img src="./assets/stats/overall-activity-light.svg" width="100%" alt="Actividad general de ingeniería" /></picture>
+
+El indicador muestra **todos los commits rastreados como un total agregado**, sin dividir ni identificar los repositorios que originan la actividad. El producto principal permanece privado y los números se actualizan automáticamente con GitHub Actions.
+
+<br/>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stats/heatmap-premium-dark.svg"><img src="./assets/stats/heatmap-premium-light.svg" width="100%" alt="Calendario público de contribuciones" /></picture>
+
+<sub>El calendario muestra únicamente las contribuciones que GitHub publica por fecha; el total agregado de commits también conserva actividad conocida de proyectos privados.</sub>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
+
+## Dirección del producto
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/roadmap-dark.svg"><img src="./assets/premium/roadmap-light.svg" width="100%" alt="Roadmap de Meu Salão" /></picture>
+
+La próxima etapa de **Meu Salão** es la escala comercial: experiencia mobile ampliada, distribución iOS, arquitectura multi-tenant y planes de pago.
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/premium/divider-dark.svg"><img src="./assets/premium/divider-light.svg" width="100%" alt="" /></picture>
 
 <div align="center">
 
-<img src="./assets/stats/beast-dashboard.svg" width="100%" alt="Actividad GitHub de Inosuke" />
+### Producto real. Ingeniería de extremo a extremo.
+
+**Full Stack Development · Product Engineering · Web · Android · iOS · SaaS**
+
 <br/>
-<img src="./assets/stats/contribution-current.svg" width="100%" alt="Distribución de commits entre Meu Salão y el perfil" />
-<br/>
-<img src="./assets/stats/breathing-heatmap.svg" width="100%" alt="Calendario público de contribuciones" />
 
-</div>
-
-La actividad rastreada incluye **704+ commits de Meu Salão** más los commits contabilizados automáticamente en este repositorio público del perfil.
-
-<img src="./assets/inosuke/divider.svg" width="100%" alt="" />
-
-## 🐾 Dirección del producto
-
-**Operación real → arquitectura sólida → Web → Android → iOS → multi-tenant → SaaS → planes pagos → escala comercial.**
-
-<div align="center">
-
-### **[🔥 Abrir demo](https://crm.lollahair.com/)** · **[✉️ Contactarme](mailto:gestao.quiroz@gmail.com)**
-
-**Inosuke · Full Stack Developer · Product Engineer**
-
-`Web` · `Android` · `iOS` · `SaaS` · `Cloud` · `Security` · `CI/CD`
+**[crm.lollahair.com](https://crm.lollahair.com/)** &nbsp;&nbsp;·&nbsp;&nbsp; **[gestao.quiroz@gmail.com](mailto:gestao.quiroz@gmail.com)**
 
 </div>
