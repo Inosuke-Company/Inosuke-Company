@@ -1,0 +1,99 @@
+name: Render responsive profile banner
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "banner.mp4"
+      - ".github/workflows/render-profile-banner.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-banner
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Ensure FFmpeg is available
+        shell: bash
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -version | head -n 1
+
+      - name: Render animated WebP from MP4
+        shell: bash
+        run: |
+          set -euo pipefail
+          ENCODER="libwebp"
+          if ffmpeg -hide_banner -encoders 2>/dev/null | grep -q "libwebp_anim"; then
+            ENCODER="libwebp_anim"
+          fi
+          ffmpeg -y -i banner.mp4 \
+            -vf "fps=15,scale='min(1600,iw)':-2:flags=lanczos" \
+            -an -loop 0 -c:v "$ENCODER" -lossless 0 -compression_level 6 -q:v 72 \
+            banner.webp
+          ls -lh banner.webp
+
+      - name: Render universal animated GIF fallback
+        shell: bash
+        run: |
+          set -euo pipefail
+          ffmpeg -y -i banner.mp4 \
+            -filter_complex "fps=10,scale='min(1200,iw)':-2:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle" \
+            -loop 0 banner-fallback.gif
+          ls -lh banner-fallback.gif
+
+      - name: Use responsive autoplay animation in every README language
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          replacement = '''<picture>
+            <source srcset="./banner.webp" type="image/webp">
+            <img src="./banner-fallback.gif" width="100%" alt="Quiroz — Full Stack Developer" />
+          </picture>'''
+
+          for filename in ["README.md", "README.en.md", "README.es.md", "README.fr.md"]:
+              path = Path(filename)
+              if not path.exists():
+                  continue
+              text = path.read_text(encoding="utf-8")
+              text, count = re.subn(
+                  r'<img src="\./banner(?:\.gif|\.webp|\.mp4)" width="100%" alt="[^"]*"\s*/>',
+                  replacement,
+                  text,
+                  count=1,
+              )
+              if count == 0 and "<picture>" not in text[:500]:
+                  marker = '<div align="center">\n\n'
+                  text = text.replace(marker, marker + replacement + "\n\n", 1)
+              path.write_text(text, encoding="utf-8")
+
+      - name: Commit generated banner assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add banner.webp banner-fallback.gif README.md README.en.md README.es.md README.fr.md
+          if git diff --cached --quiet; then
+            echo "Banner assets already up to date."
+            exit 0
+          fi
+          git commit -m "Update responsive animated profile banner"
+          git push
