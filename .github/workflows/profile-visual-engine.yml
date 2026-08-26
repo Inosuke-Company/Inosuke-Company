@@ -4,7 +4,7 @@ name: Atualizar visuais premium do perfil Inosuke
 on:
   workflow_dispatch:
   schedule:
-    # Recalcula todos os repositórios uma vez por hora.
+    # Recalcula as métricas públicas e reaplica o agregado privado uma vez por hora.
     - cron: "17 * * * *"
   push:
     branches:
@@ -14,6 +14,7 @@ on:
       - "README.en.md"
       - "README.es.md"
       - "README.fr.md"
+      - "data/private-commit-baseline.txt"
       - "scripts/render-profile-visuals.mjs"
       - "package.json"
       - "package-lock.json"
@@ -34,7 +35,6 @@ jobs:
       GITHUB_USER: Inosuke-Company
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
-      PRIVATE_COMMIT_BASELINE: "704"
 
     steps:
       - name: Baixar repositório do perfil
@@ -51,7 +51,12 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Gerar visuais e métricas em português
-        run: npm run profile:render
+        shell: bash
+        run: |
+          set -euo pipefail
+          PRIVATE_COMMIT_BASELINE="$(cat data/private-commit-baseline.txt 2>/dev/null || printf '704')"
+          export PRIVATE_COMMIT_BASELINE
+          npm run profile:render
 
       - name: Publicar ativos atualizados com segurança
         shell: bash
