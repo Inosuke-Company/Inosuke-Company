@@ -9,7 +9,7 @@ const mdi = require('@iconify-json/mdi/icons.json');
 
 const USER = process.env.GITHUB_USER || 'Inosuke-Company';
 const PROFILE_REPO = USER;
-const CORE_REPO = 'lolla-gest-o-beauty-salon-manager';
+const CORE_REPO = process.env.CORE_REPOSITORY || '';
 const token = process.env.PROFILE_STATS_TOKEN || process.env.GITHUB_TOKEN || '';
 const hasPrivateToken = Boolean(process.env.PROFILE_STATS_TOKEN);
 
@@ -118,7 +118,7 @@ const [gql, scraped, profileExact, coreExact] = await Promise.all([
   graphqlData(),
   scrapePublicContributions(),
   repoCommitCount(USER, PROFILE_REPO),
-  hasPrivateToken ? repoCommitCount(USER, CORE_REPO, process.env.PROFILE_STATS_TOKEN) : Promise.resolve(null)
+  hasPrivateToken && CORE_REPO ? repoCommitCount(USER, CORE_REPO, process.env.PROFILE_STATS_TOKEN) : Promise.resolve(null)
 ]);
 
 const gqlDays = gql?.contributionsCollection?.contributionCalendar?.weeks?.flatMap(w => w.contributionDays) || [];
