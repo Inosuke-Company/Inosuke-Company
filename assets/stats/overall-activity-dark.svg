@@ -8,10 +8,10 @@
   </defs>
     <rect width="1200" height="430" rx="30" fill="#0b0d11"/><rect x="42" y="34" width="1116" height="352" rx="24" fill="#11151a" fill-opacity=".78" stroke="#2c323a" stroke-width=".7" filter="url(#a-shadow)"/>
     <text x="80" y="86" fill="#9da3aa" font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="4.5">ATIVIDADE GERAL DE ENGENHARIA</text>
-    <text x="80" y="166" fill="url(#a-duo)" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="80" font-weight="600">1.285+</text>
+    <text x="80" y="166" fill="url(#a-duo)" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="80" font-weight="600">1.286+</text>
     <text x="80" y="198" fill="#f2f0ec" font-family="Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="2">COMMITS TOTAIS RASTREADOS</text>
     <text x="1090" y="108" text-anchor="end" fill="#9da3aa" font-family="monospace" font-size="10">PRÓXIMA META</text><text x="1090" y="145" text-anchor="end" fill="#f2f0ec" font-family="Arial,sans-serif" font-size="27" font-weight="650">1.500</text>
-    <line x1="106" y1="250" x2="1094" y2="250" stroke="#2c323a" stroke-width="7" stroke-linecap="round"/><line x1="106" y1="250" x2="952.3866666666667" y2="250" stroke="url(#a-duo)" stroke-width="7" stroke-linecap="round"><animate attributeName="x2" from="106" to="952.3866666666667" dur="1.8s" fill="freeze"/></line><circle cx="952.3866666666667" cy="250" r="8" fill="#11151a" stroke="#d67b4d" stroke-width="2.5"/>
+    <line x1="106" y1="250" x2="1094" y2="250" stroke="#2c323a" stroke-width="7" stroke-linecap="round"/><line x1="106" y1="250" x2="953.0453333333332" y2="250" stroke="url(#a-duo)" stroke-width="7" stroke-linecap="round"><animate attributeName="x2" from="106" to="953.0453333333332" dur="1.8s" fill="freeze"/></line><circle cx="953.0453333333332" cy="250" r="8" fill="#11151a" stroke="#d67b4d" stroke-width="2.5"/>
     <line x1="80" y1="318" x2="1120" y2="318" stroke="#2c323a" stroke-width=".7"/>
     <text x="80" y="355" fill="#9da3aa" font-family="monospace" font-size="9" letter-spacing="1.8">CONTRIBUIÇÕES VISÍVEIS</text><text x="285" y="355" fill="#f2f0ec" font-family="Arial,sans-serif" font-size="20" font-weight="650">879</text>
     <text x="430" y="355" fill="#9da3aa" font-family="monospace" font-size="9" letter-spacing="1.8">DIAS ATIVOS</text><text x="558" y="355" fill="#f2f0ec" font-family="Arial,sans-serif" font-size="20" font-weight="650">11</text>
