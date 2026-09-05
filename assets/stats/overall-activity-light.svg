@@ -8,13 +8,13 @@
   </defs>
     <rect width="1200" height="430" rx="30" fill="#f7f5f1"/><rect x="42" y="34" width="1116" height="352" rx="24" fill="#fffdf9" fill-opacity=".96" stroke="#d9d3cb" stroke-width=".7" filter="url(#a-shadow)"/>
     <text x="80" y="86" fill="#70737a" font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="4.5">ATIVIDADE GERAL DE ENGENHARIA</text>
-    <text x="80" y="166" fill="url(#a-duo)" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="80" font-weight="600">1.608+</text>
+    <text x="80" y="166" fill="url(#a-duo)" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="80" font-weight="600">1.669+</text>
     <text x="80" y="198" fill="#17191d" font-family="Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="2">COMMITS TOTAIS RASTREADOS</text>
     <text x="1090" y="108" text-anchor="end" fill="#70737a" font-family="monospace" font-size="10">PRÓXIMA META</text><text x="1090" y="145" text-anchor="end" fill="#17191d" font-family="Arial,sans-serif" font-size="27" font-weight="650">2.000</text>
-    <line x1="106" y1="250" x2="1094" y2="250" stroke="#d9d3cb" stroke-width="7" stroke-linecap="round"/><line x1="106" y1="250" x2="900.3520000000001" y2="250" stroke="url(#a-duo)" stroke-width="7" stroke-linecap="round"><animate attributeName="x2" from="106" to="900.3520000000001" dur="1.8s" fill="freeze"/></line><circle cx="900.3520000000001" cy="250" r="8" fill="#fffdf9" stroke="#b85f36" stroke-width="2.5"/>
+    <line x1="106" y1="250" x2="1094" y2="250" stroke="#d9d3cb" stroke-width="7" stroke-linecap="round"/><line x1="106" y1="250" x2="930.486" y2="250" stroke="url(#a-duo)" stroke-width="7" stroke-linecap="round"><animate attributeName="x2" from="106" to="930.486" dur="1.8s" fill="freeze"/></line><circle cx="930.486" cy="250" r="8" fill="#fffdf9" stroke="#b85f36" stroke-width="2.5"/>
     <line x1="80" y1="318" x2="1120" y2="318" stroke="#d9d3cb" stroke-width=".7"/>
-    <text x="80" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.8">CONTRIBUIÇÕES VISÍVEIS</text><text x="285" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">84</text>
-    <text x="430" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.8">DIAS ATIVOS</text><text x="558" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">6</text>
+    <text x="80" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.8">CONTRIBUIÇÕES VISÍVEIS</text><text x="285" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">85</text>
+    <text x="430" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.8">DIAS ATIVOS</text><text x="558" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">7</text>
     <text x="700" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.6">ALTERAÇÕES PROPOSTAS</text><text x="900" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">0</text>
     <text x="962" y="355" fill="#70737a" font-family="monospace" font-size="9" letter-spacing="1.4">REVISÕES</text><text x="1070" y="355" fill="#17191d" font-family="Arial,sans-serif" font-size="20" font-weight="650">0</text>
   </svg>
